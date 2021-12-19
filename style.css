@@ -204,7 +204,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 3rem;
+    padding-top: 1rem;
     justify-items: center;
   }
 }
