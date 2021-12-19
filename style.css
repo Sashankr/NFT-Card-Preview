@@ -4,17 +4,17 @@
   margin: unset;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 :root {
   --color-main-background: hsl(217, 54%, 11%);
   --color-card-background: hsl(216, 50%, 16%);
-  --color-card-line:  hsl(215, 32%, 27%);
+  --color-card-line: hsl(215, 32%, 27%);
   --color-soft-blue: hsl(215, 51%, 70%);
   --color-box-shadow: hsl(217deg 54% 9%);
   --color-light: hsl(0, 0%, 100%);
-  --color-paragraph: #677E9E;
+  --color-paragraph: #677e9e;
   --color-highlight: hsl(178, 100%, 50%);
 }
 
@@ -196,5 +196,16 @@
 .nft__creator-name:hover {
   cursor: pointer;
   color: var(--color-highlight);
+}
+
+@media (max-width: 512px) {
+  .nft__canvas {
+    place-items: unset;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 3rem;
+    justify-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
