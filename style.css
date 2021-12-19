@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 * {
   padding: unset;
-  border: unset;
+  margin: unset;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+:root {
+  --color-main-background: hsl(217, 54%, 11%);
+  --color-card-background: hsl(216, 50%, 16%);
+  --color-card-line:  hsl(215, 32%, 27%);
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-box-shadow: hsl(217deg 54% 9%);
+  --color-light: hsl(0, 0%, 100%);
+  --color-paragraph: #677E9E;
+  --color-highlight: hsl(178, 100%, 50%);
 }
 
 .attribution {
@@ -12,5 +25,176 @@
 
 .attribution a {
   color: #3e52a3;
+}
+
+.nft__image {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+  margin-bottom: unset;
+}
+
+.nft__image-container {
+  position: relative;
+  height: 240px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.nft__image-container:hover .nft__view-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--color-highlight);
+  opacity: 0.6;
+}
+
+.nft__view-overlay {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  height: 100%;
+}
+
+.nft__title {
+  color: var(--color-light);
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.nft__title:hover {
+  cursor: pointer;
+  color: var(--color-highlight);
+}
+
+.nft__description {
+  color: var(--color-paragraph);
+  font-weight: 300;
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.nft__canvas {
+  background-color: var(--color-main-background);
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.nft__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: var(--color-card-background);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  padding: 1rem 1rem 1.5rem;
+  width: 270px;
+  -webkit-box-shadow: -1px 24px 4px 10px var(--color-box-shadow);
+          box-shadow: -1px 24px 4px 10px var(--color-box-shadow);
+}
+
+.nft__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-paragraph);
+}
+
+.nft__details span {
+  margin-left: 2px;
+}
+
+.nft__details-icon {
+  width: 14px;
+  height: 14px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.nft__value {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: var(--color-highlight);
+}
+
+.nft__expiry {
+  color: var(--color-paragraph);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nft__creator-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 1px solid var(--color-light);
+}
+
+.nft__creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nft__creator-prepend {
+  color: var(--color-paragraph);
+  font-size: 14px;
+  margin-right: 4px;
+}
+
+.nft__creator-name {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--color-light);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.nft__creator-name:hover {
+  cursor: pointer;
+  color: var(--color-highlight);
 }
 /*# sourceMappingURL=style.css.map */

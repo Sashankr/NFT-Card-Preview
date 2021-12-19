@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
@@ -20,7 +20,10 @@
         <section class="nft__canvas">
           <div class="nft__card">
             <div class="nft__image-container">
-              <img src="" class="nft__image" alt="">
+              <img src="./images/image-equilibrium.jpg" class="nft__image" alt=""/>
+              <div class="nft__view-overlay">
+                <img src="./images/icon-view.svg" alt=""/>
+              </div>
             </div>
             <div class="nft__card-content">
               <h2 class="nft__title">Equilibrium #3429</h2>
@@ -28,33 +31,34 @@
 
               <section class="nft__details">
                 <div class="nft__details__cryptocurrency">
-                  <img class="nft__details-icon" />
-                  <span>0.041ETH</span>
+                  <img class="nft__details-icon" src="./images/icon-ethereum.svg" alt="ethereum" />
+                  <span class="nft__value">0.041ETH</span>
                 </div>
 
                 <div class="nft__details__countdown-timer">
-                  <img class="nft__details-icon" />
-                  <span>3 days left</span>
+                  <img src="./images/icon-clock.svg" alt="clock" class="nft__details-icon" />
+                  <span class="nft__expiry">3 days left</span>
                 </div>
                 
               </section>
 
               <section class="nft__creator">
-                <img class="nft__creator-image" src="" alt="">
+                <img class="nft__creator-image" src="./images/image-avatar.png" alt="avatar">
                 <span class="nft__creator-prepend">Creation of</span>
                 <span class="nft__creator-name">Sashank R</span>
               </section>
             </div>
           </div>
+          <!-- <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+          </div>  -->
         </section>
     </div>
 
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+
   </body>
 </html>
